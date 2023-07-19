@@ -1,0 +1,60 @@
+@import "variables";
+
+.banner_image {
+  position: relative;
+  z-index: 1;
+  .header-image {
+    img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+      object-position: 0;
+    }
+  }
+}
+
+.teaser-text {
+  position: absolute;
+  bottom: 28%;
+  color: white;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  h2 {
+    font-weight: bolder;
+    .span-h2 {
+      font-size: 32px;
+      font-weight: lighter;
+    }
+  }
+  p {
+    text-transform: uppercase;
+    a {
+      color: white;
+      background: $türkis;
+      padding: 12px 50px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 23px;
+      transition: color 250ms;
+      &:hover {
+        background-color: transparent;
+        color: $türkis;
+        border: 3px solid $türkis;
+      }
+    }
+  }
+}
+
+.address {
+  position: absolute;
+  bottom: 10%;
+  width: 90%;
+  max-width:$max-width;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}

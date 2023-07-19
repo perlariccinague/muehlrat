@@ -1,0 +1,72 @@
+@import "variables";
+
+/*.header .right {
+  .mod_form {
+    position: relative;
+    cursor: pointer;
+    .search_input {
+      background: transparent;
+      border: none;
+      padding: 10px 0;
+    }
+    .search {
+      position: absolute;
+      right: 10px;
+      top: 7px;
+      width: 30px;
+    }
+  }
+}*/
+
+/*
+.right .mod_form .search:hover .search_input {
+  width: 350px;
+  background: #3b3640;
+  border-radius: 10px;
+}*/
+
+.box{
+  position: relative;
+  cursor: pointer;
+}
+
+.input {
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  background: none;
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  transition: .5s;
+}
+
+.box:hover .input/*, .box:focus .input*/ {
+  width: 250px;
+  background: aliceblue;
+  border-radius: 20px;
+  height: 20px;
+  padding: 20px;
+}
+
+.box .btn-search {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%,-50%);
+  transition: .2s;
+  cursor: pointer;
+  img {
+    width: 30px;
+  }
+}
+
+.box:hover .btn-search, .box:focus .btn-search{
+  z-index: 1;
+  right: -12px;
+  position: relative;
+  top: 3px;
+  padding-right: 20px;
+}
