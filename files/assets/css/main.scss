@@ -6,7 +6,7 @@
   .header-image {
     img {
       width: 100%;
-      height: 70vh;
+      height: 90vh;
       object-fit: cover;
       object-position: 0;
     }
@@ -27,6 +27,9 @@
       font-weight: lighter;
     }
   }
+}
+
+.teaser-text {
   p {
     text-transform: uppercase;
     a {
@@ -48,7 +51,7 @@
 
 .address {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   width: 90%;
   max-width:$max-width;
   margin: 0 auto;
@@ -57,4 +60,79 @@
   display: flex;
   justify-content: space-between;
   color: white;
+  .phone, .mail, .location {
+    p {
+      position: relative;
+      padding-left: 85px;
+      font-size: 20px;
+      line-height: 24px;
+      a {
+        color: white;
+        transition: color 250ms;
+        &:hover {
+          color: $türkis;
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: -5px;
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  .phone p:before {
+    background: url("/files/assets/layout/Phone.svg") no-repeat;
+  }
+  .mail p:before {
+    background: url("/files/assets/layout/E-Mail.svg") no-repeat;
+  }
+  .location p:before {
+    background: url("/files/assets/layout/Location.svg") no-repeat;
+  }
+  .phone, .mail {
+    border-right: 2px solid white;
+    padding-right: 85px
+  }
+}
+
+.consulting {
+  height: 950px;
+  position: relative;
+  z-index: 4;
+  width: 100%;
+}
+
+.consulting {
+  margin-top: -90px;
+  background: url("/files/assets/layout/Differenzmenge 1.png") center top 0/cover no-repeat;
+}
+
+.consulting-box {
+  margin: 0 auto;
+  width: 90%;
+  max-width: $max-width;
+}
+
+.consulting-box {
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: space-between;
+  .ce_text, .ce_image {
+    width: 45%;
+  }
+  .ce_text {
+    h2 {
+      color: $blau;
+    }
+    p > strong {
+      color: $blau;
+      font-weight: normal;
+    }
+  }
+  .ce_image {
+    margin-top: 45px;
+  }
 }
