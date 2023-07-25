@@ -1,18 +1,29 @@
 @import "variables";
 
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 h2 {
-  font: normal normal normal 45px/50px Titillium Web;
+  font: normal normal 500 60px/60px Raleway;
+  text-transform: uppercase;
+}
+
+h3 {
+  font: normal normal 600 44px/40px Raleway;
   text-transform: uppercase;
 }
 
 p {
-  font: normal normal normal 28px/30px Titillium Web;
+  font: normal normal 500 18px/28px Raleway;
 }
 
 a {
   text-decoration: none;
+}
+
+.consulting-box, .blog-block {
+  margin: 0 auto;
+  width: 90%;
+  max-width: $max-width;
 }

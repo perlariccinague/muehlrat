@@ -20,25 +20,25 @@
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
-  h2 {
+  h3 {
     font-weight: bolder;
     .span-h2 {
-      font-size: 32px;
+      font: normal normal normal 28px/40px Raleway;
       font-weight: lighter;
     }
   }
 }
 
-.teaser-text {
+.teaser-text, .consulting-box .ce_text {
   p {
-    text-transform: uppercase;
     a {
       color: white;
       background: $türkis;
-      padding: 12px 50px;
+      padding: 12px 25px;
       border-radius: 25px;
       text-decoration: none;
       font-size: 23px;
+      text-transform: uppercase;
       transition: color 250ms;
       &:hover {
         background-color: transparent;
@@ -64,8 +64,7 @@
     p {
       position: relative;
       padding-left: 85px;
-      font-size: 20px;
-      line-height: 24px;
+      font: normal normal normal 17px/24px Raleway;
       a {
         color: white;
         transition: color 250ms;
@@ -98,8 +97,9 @@
   }
 }
 
-.consulting {
-  height: 950px;
+.consulting, .about-us, .reference,
+.blog {
+  height: auto;
   position: relative;
   z-index: 4;
   width: 100%;
@@ -110,16 +110,20 @@
   background: url("/files/assets/layout/Differenzmenge 1.png") center top 0/cover no-repeat;
 }
 
-.consulting-box {
-  margin: 0 auto;
-  width: 90%;
-  max-width: $max-width;
+.about-us {
+  background: #e5edf7 url("/files/assets/layout/bg-white.svg") center top 0/cover no-repeat;
+}
+
+.blog {
+  background: #031329 url("/files/assets/layout/bg-white.svg") center top 0/cover no-repeat;
+  margin-top: -9px;
 }
 
 .consulting-box {
-  margin: 100px auto 0;
+  margin: 100px auto ;
   display: flex;
   justify-content: space-between;
+  padding: 50px 0;
   .ce_text, .ce_image {
     width: 45%;
   }
@@ -129,10 +133,106 @@
     }
     p > strong {
       color: $blau;
-      font-weight: normal;
+      font: normal normal 500 22px/30px Raleway;
     }
   }
   .ce_image {
     margin-top: 45px;
+  }
+}
+
+.reference {
+  .ce_image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.reference {
+  .ce_sliderStart {
+    width: 100%;
+    color: white;
+    background: url("/files/assets/layout/Differenzmenge 3(2).svg") center top 0/cover no-repeat;
+    position: absolute;
+    bottom: 0;
+    z-index: 6;
+    height: auto;
+    padding: 50px 0;
+    .content-slider {
+      width: 30%;
+      margin: 100px auto;
+      .layout_short {
+        text-align: center;
+        h2 {
+          a {
+            color: white;
+          }
+        }
+       .ce_text {
+         p {
+           font: normal normal 500 22px/30px Raleway;
+         }
+       }
+      }
+    }
+    .slider-control {
+      position: absolute;
+      transform: translateY(-50%);
+      width: 100%;
+      top: 50%;
+      .slider-menu {
+        display: none;
+      }
+      .slider-prev, .slider-next {
+        img {
+          width: 58px;
+          height: 80px;
+        }
+      }
+      .slider-prev {
+        left: 16%;
+      }
+      .slider-next{
+        right: 16%;
+      }
+    }
+  }
+}
+
+.blog-block {
+  padding: 120px 0;
+  h2 {
+    color: $blau;
+  }
+  .mod_newslist {
+    display: flex;
+    justify-content: space-between;
+    .layout_short {
+      width: 45%;
+      .time {
+        font: normal normal 600 24px/30px Raleway;
+        color: $blau;
+        display: inline-block;
+        position: relative;
+        padding: 0;
+        &:after {
+          content: "";
+          position: absolute;
+          background: url("/files/assets/layout/Linie.svg") no-repeat 0/cover;
+          top: 15px;
+          height: 1px;
+          left: 124px;
+          width: 350px;
+        }
+      }
+      .ce_text {
+        p {
+          strong {
+            font: normal normal 600 26px/30px Raleway;
+          }
+        }
+      }
+    }
   }
 }
