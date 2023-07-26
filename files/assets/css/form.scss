@@ -43,7 +43,7 @@
   transition: .5s;
 }
 
-.box:hover .input/*, .box:focus .input*/ {
+.box:hover .input, .box:focus .input {
   width: 250px;
   background: aliceblue;
   border-radius: 20px;

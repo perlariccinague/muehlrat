@@ -22,8 +22,41 @@ a {
   text-decoration: none;
 }
 
-.consulting-box, .blog-block {
+ul {
+  list-style: none;
+}
+
+.consulting-box, .blog-block, .footer {
   margin: 0 auto;
   width: 90%;
   max-width: $max-width;
+}
+
+.ce_hyperlink.block {
+  text-align: right;
+  margin-top: 30px;
+  a {
+    display: inline-block;
+    font: normal normal 500 18px/28px Raleway;
+  }
+}
+
+.teaser-text p, .consulting-box .ce_text p,
+.ce_hyperlink.block {
+  a {
+    color: white;
+    background: $türkis;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 23px;
+    text-transform: uppercase;
+    border: 3px solid $türkis;
+    transition: color 250ms, background-color 250ms;
+    &:hover {
+      background-color: transparent;
+      color: $türkis;
+
+    }
+  }
 }

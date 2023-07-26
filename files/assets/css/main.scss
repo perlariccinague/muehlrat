@@ -29,7 +29,7 @@
   }
 }
 
-.teaser-text, .consulting-box .ce_text {
+/*.teaser-text, .consulting-box .ce_text {
   p {
     a {
       color: white;
@@ -47,7 +47,8 @@
       }
     }
   }
-}
+}*/
+
 
 .address {
   position: absolute;
@@ -188,6 +189,10 @@
         img {
           width: 58px;
           height: 80px;
+          transition: filter  250ms;
+          &:hover {
+            filter: invert(44%) sepia(95%) saturate(420%) hue-rotate(129deg);
+          }
         }
       }
       .slider-prev {
