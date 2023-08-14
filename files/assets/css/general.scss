@@ -26,7 +26,8 @@ ul {
   list-style: none;
 }
 
-.consulting-box, .blog-block, .footer {
+.consulting-box, .blog-block, .footer,
+.consulting-text, .competence-block {
   margin: 0 auto;
   width: 90%;
   max-width: $max-width;
@@ -42,8 +43,10 @@ ul {
 }
 
 .teaser-text p, .consulting-box .ce_text p,
-.ce_hyperlink.block {
-  a {
+.ce_hyperlink.block, .teaser-beratung,
+.competence-block .left, .competence-block .right,
+.form-right .widget.widget-submit{
+  a, .submit {
     color: white;
     background: $türkis;
     padding: 12px 25px;
@@ -59,4 +62,11 @@ ul {
 
     }
   }
+}
+
+.form-right .widget.widget-submit {
+  text-align: right;
+ /*.submit {
+   font: normal normal 500 18px/26px Raleway;
+ }*/
 }

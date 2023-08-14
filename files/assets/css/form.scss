@@ -70,3 +70,24 @@
   top: 3px;
   padding-right: 20px;
 }
+
+.form-right .formbody .widget-text,
+.form-right .formbody .widget-textarea {
+  margin: 20px 0;
+}
+
+.form-right .formbody input[name="name"],
+.form-right .formbody textarea[name="nachricht"],
+.form-right .formbody input[name="email"],
+.form-right .formbody input[name="betreff"] {
+  background-color: #0000000D;
+  border: 0;
+  color: black;
+  cursor: pointer;
+  width: 90%;
+  padding: 10px 26px;
+  outline: none;
+  border-radius: 25px;
+  font: normal normal 500 16px/30px Raleway;
+  transition: background-color 250ms;
+}

@@ -1,0 +1,5 @@
+<div class="block-box">
+    <img src="{{file::<?= $this->image ?>}}" alt="">
+    <h4><?= $this->titel ?></h4>
+    <span class="description"><?= $this->description ?></span>
+</div>
