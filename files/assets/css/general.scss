@@ -27,7 +27,9 @@ ul {
 }
 
 .consulting-box, .blog-block, .footer,
-.consulting-text, .competence-block {
+.consulting-text, .competence-block,
+.newslist .mod_newslist,
+.mod_newsreader, .privacy  {
   margin: 0 auto;
   width: 90%;
   max-width: $max-width;
@@ -45,7 +47,7 @@ ul {
 .teaser-text p, .consulting-box .ce_text p,
 .ce_hyperlink.block, .teaser-beratung,
 .competence-block .left, .competence-block .right,
-.form-right .widget.widget-submit{
+.form-right .widget.widget-submit {
   a, .submit {
     color: white;
     background: $türkis;
@@ -81,4 +83,28 @@ ul {
   z-index: 3;
   opacity: 0.9;
   transition: height 500ms;
+}
+
+.mod_newsreader {
+  margin: 50px auto;
+}
+
+@media screen and (max-width: 670px){
+  h2 {
+    font: normal normal 500 30px/35px Raleway;
+    text-transform: uppercase;
+  }
+  h3 {
+    font: normal normal 500 25px/30px Raleway;
+  }
+
+  .teaser-text p, .consulting-box .ce_text p,
+  .ce_hyperlink.block, .teaser-beratung,
+  .competence-block .left, .competence-block .right,
+  .form-right .widget.widget-submit {
+    a, .submit {
+      font-size: 16px;
+      padding: 8px 20px;
+    }
+  }
 }

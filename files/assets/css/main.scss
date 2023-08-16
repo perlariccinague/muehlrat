@@ -108,7 +108,7 @@
 
 .consulting {
   margin-top: -90px;
-  background: url("/files/assets/layout/Differenzmenge 1.png") center top 0/cover no-repeat;
+  background: url("/files/assets/layout/Differenzmenge 1(2).svg") center top 0/cover no-repeat;
 }
 
 .about-us {
@@ -116,7 +116,7 @@
 }
 
 .blog {
-  background: #031329 url("/files/assets/layout/bg-white.svg") center top 0/cover no-repeat;
+  background: #031329 url("/files/assets/layout/bg-white-new.svg") center top 0/cover no-repeat;
   margin-top: -9px;
 }
 
@@ -125,6 +125,7 @@
   display: flex;
   justify-content: space-between;
   padding: 50px 0;
+  flex-wrap: wrap;
   .ce_text, .ce_image {
     width: 45%;
   }
@@ -213,6 +214,7 @@
   .mod_newslist {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     .layout_short {
       width: 45%;
       .time {
@@ -345,5 +347,108 @@
   .form-right {
     width: 45%;
     margin-top: 40px;
+  }
+}
+
+.newslist .mod_newslist {
+  margin: 80px auto;
+  .layout_short {
+    background: #00A7A2;
+    padding: 5px 35px;
+    color: white;
+    margin: 10px auto;
+    .time, .more a{
+      color: #0054B1;
+    }
+    .more {
+      text-transform: uppercase;
+      a {
+        transition: color 250ms;
+        &:hover {
+          color: $dunkelblau;
+        }
+      }
+    }
+  }
+}
+
+.privacy {
+  margin: 30px auto;
+  h2 {
+    font: normal normal 600 40px/40px Raleway;
+    text-align: center;
+    color: $blau;
+  }
+  p {
+    a {
+      color: $blau;
+      transition: color 250ms;
+      &:hover {
+        color: $türkis;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+
+  .teaser-text, .teaser-beratung {
+    bottom: 25%;
+    h3 {
+      .span-h2 {
+        font: normal normal normal 23px/30px Raleway;
+        font-weight: lighter;
+      }
+    }
+  }
+
+  .address {
+    display: none;
+  }
+
+  .consulting {
+    margin-top: -117px;
+  }
+
+  .consulting-box {
+    margin: 50px auto;
+    .ce_text, .ce_image {
+      width: 100%;
+    }
+  }
+
+ /* .about-us {
+    background: none;
+  }*/
+
+  .reference .ce_sliderStart {
+    padding: 0;
+    position: relative;
+    background: #031329;
+    margin-top: -4px;
+    .content-slider {
+      width: 70%;
+      margin: 30px auto;
+    }
+    .slider-control {
+      .slider-prev, .slider-next {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .slider-prev {
+        left: 2%;
+      }
+      .slider-next{
+        right: 2%;
+      }
+    }
+  }
+
+  .blog-block {
+    .mod_newslist .layout_short {
+      width: 100%;
+    }
   }
 }
