@@ -8,7 +8,7 @@
     position: relative;
     .mod_navigation {
       position: relative;
-      top: 80px;
+      top: 65px;
       width: 90%;
       max-width: $max-width;
       margin: 80px auto;
@@ -45,16 +45,21 @@
          }
       }
         &.level_2 {
-          width: auto;
-          left: -9999px;
-          position: absolute;
-          top: 8px;
-          transform: translateX(-10px);
+          display: none;
+          position: inherit;
+          transition: display 250ms;
           li {
-            padding-top: 5px;
+            padding-top: 4px;
+            text-transform: capitalize;
           }
         }
       }
     }
+  }
+}
+
+.mobile_menu .inner {
+  .mod_navigation  ul li:hover ul.level_2 {
+    display:block;
   }
 }

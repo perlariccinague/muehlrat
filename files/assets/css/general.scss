@@ -93,6 +93,7 @@ ul {
   h2 {
     font: normal normal 500 30px/35px Raleway;
     text-transform: uppercase;
+    text-align: center;
   }
   h3 {
     font: normal normal 500 25px/30px Raleway;
@@ -106,5 +107,8 @@ ul {
       font-size: 16px;
       padding: 8px 20px;
     }
+  }
+  .ce_hyperlink.block {
+    text-align: center;
   }
 }

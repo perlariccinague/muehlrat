@@ -1,0 +1,37 @@
+@import "variables";
+
+.ce_sliderStart.block-slider {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .bg-blue .block-container {
+    display: none;
+  }
+
+  .ce_sliderStart.block-slider {
+    display: block;
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    .block-box {
+      text-align: center;
+      color: white;
+    }
+    .slider-control {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      .slider-menu {
+        display: none;
+      }
+      .slider-prev, .slider-next {
+        img {
+          width: 20px;
+        }
+      }
+    }
+
+  }
+}

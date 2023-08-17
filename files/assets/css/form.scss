@@ -91,3 +91,37 @@
   font: normal normal 500 16px/30px Raleway;
   transition: background-color 250ms;
 }
+
+.right {
+  .mod_form {
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    .widget.widget-submit.search {
+      width: 35px;
+    }
+    /*.search_input {
+      display: none;
+      .input {
+        padding: 7px 4px;
+        border-radius: 37px;
+        outline: none;
+        border: none;
+        transition: .5s;
+        margin-right: 46px;
+    }*/
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .form-right .formbody input[name="name"],
+  .form-right .formbody textarea[name="nachricht"],
+  .form-right .formbody input[name="email"],
+  .form-right .formbody input[name="betreff"] {
+    padding: 10px 12px;
+  }
+  .form-right .widget.widget-submit {
+    text-align: center;
+  }
+}

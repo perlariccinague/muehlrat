@@ -112,12 +112,13 @@
 }
 
 .about-us {
-  background: #e5edf7 url("/files/assets/layout/bg-white.svg") center top 0/cover no-repeat;
+  background: #e5edf7 url("/files/assets/layout/bg-white-new.svg") center top 0/cover no-repeat;
 }
 
 .blog {
   background: #031329 url("/files/assets/layout/bg-white-new.svg") center top 0/cover no-repeat;
   margin-top: -9px;
+  /*background: url("/files/assets/layout/bg-white-new.svg") center top 0/cover no-repeat;*/
 }
 
 .consulting-box, .consulting-text {
@@ -258,7 +259,7 @@
 }
 
 .about-us.beratung {
-  background: #e3e3e5 url("/files/assets/layout/bg-white.svg") center top 0/cover no-repeat;
+  background: #e3e3e5 url("/files/assets/layout/bg-white-new.svg") center top 0/cover no-repeat;
   margin-top: -15px;
   .right {
     font: normal normal bold 20px/45px Raleway;
@@ -314,7 +315,7 @@
 }
 
 .blog.competence {
-  background: #041c3a url("/files/assets/layout/bg-white.svg") center top 0/cover no-repeat;
+  background: #041c3a url("/files/assets/layout/bg-white-new.svg") center top 0/cover no-repeat;
 }
 
 .competence-block {
@@ -402,18 +403,26 @@
     }
   }
 
+  .teaser-beratung {
+    left: 50%;
+    bottom: -2px;
+  }
+
   .address {
     display: none;
   }
 
   .consulting {
-    margin-top: -117px;
+    margin-top: -108px;
   }
 
   .consulting-box {
-    margin: 50px auto;
+    margin: 30px auto;
     .ce_text, .ce_image {
       width: 100%;
+    }
+    .ce_text {
+      margin-top: 15px;
     }
   }
 
@@ -447,8 +456,46 @@
   }
 
   .blog-block {
+    padding: 70px 0;
     .mod_newslist .layout_short {
       width: 100%;
     }
+  }
+  
+  .consulting-text {
+    margin: 30px auto;
+    .left, .right {
+      width: 100%;
+    }
+  }
+
+  .bg-blue {
+   .ce_text {
+     margin: 30px auto;
+     padding: 30px 0 0;
+   }
+  }
+
+  .competence-block {
+    padding: 50px 0;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    .left {
+      border: none;
+      padding-right: 0;
+      text-align: center;
+    }
+    .left, .right {
+      width: 100%;
+    }
+  .right {
+    margin-top: 15px;
+    text-align: center;
+   }
+  }
+
+  .consulting-box .form-right {
+    width: 100%;
+    margin-top: 0;
   }
 }

@@ -4,6 +4,10 @@
   background: #fff url("/files/assets/layout/bg_dunkelblau.svg") center top 0/cover no-repeat;
 }
 
+.advice #footer {
+  background: #e5edf7 url("/files/assets/layout/bg_dunkelblau.svg") center top 0/cover no-repeat;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -111,5 +115,24 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .footer .footer-middle-left,
+  .footer .footer-middle-new,
+  .footer .footer-middle-right {
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+  }
+  .footer .footer-middle-left {
+    margin-top: 50px;
+  }
+  .footer-left-top p {
+    text-align: center;
+  }
+  .footer-bottom {
+    display: none;
   }
 }
