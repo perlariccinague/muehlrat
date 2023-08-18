@@ -21,7 +21,6 @@
   left: 50%;
   transform: translateX(-50%);
   h3 {
-    font-weight: bolder;
     .span-h2 {
       font: normal normal normal 28px/40px Raleway;
       font-weight: lighter;
@@ -29,27 +28,11 @@
   }
 }
 
-/*.teaser-text, .consulting-box .ce_text {
+.teaser-text {
   p {
-    a {
-      color: white;
-      background: $türkis;
-      padding: 12px 25px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-size: 23px;
-      text-transform: uppercase;
-      transition: color 250ms;
-      &:hover {
-        background-color: transparent;
-        color: $türkis;
-        border: 3px solid $türkis;
-      }
-    }
+    font: normal normal normal 26px/36px Raleway;
   }
-}*/
-
-
+}
 .address {
   position: absolute;
   bottom: 15%;
@@ -65,7 +48,7 @@
     p {
       position: relative;
       padding-left: 85px;
-      font: normal normal normal 17px/24px Raleway;
+      font: normal normal normal 22px/24px Raleway;
       a {
         color: white;
         transition: color 250ms;
@@ -388,6 +371,14 @@
         color: $türkis;
       }
     }
+  }
+}
+
+//New Layout
+
+.project {
+  h2 {
+    font: normal normal normal 42px/56px Raleway;
   }
 }
 

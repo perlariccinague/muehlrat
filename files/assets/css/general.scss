@@ -4,18 +4,24 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+h1 {
+  text-align: center;
+  font: normal normal 500 44px/46px Raleway;
+  text-transform:uppercase ;
+}
+
 h2 {
   font: normal normal 500 60px/60px Raleway;
   text-transform: uppercase;
 }
 
 h3 {
-  font: normal normal 600 44px/40px Raleway;
+  font: normal normal 600 44px/46px Raleway;
   text-transform: uppercase;
 }
 
 p {
-  font: normal normal 500 18px/28px Raleway;
+  font: normal normal 500 22px/34px Raleway;
 }
 
 a {
@@ -29,7 +35,7 @@ ul {
 .consulting-box, .blog-block, .footer,
 .consulting-text, .competence-block,
 .newslist .mod_newslist,
-.mod_newsreader, .privacy  {
+.mod_newsreader, .privacy, .project {
   margin: 0 auto;
   width: 90%;
   max-width: $max-width;
@@ -47,7 +53,7 @@ ul {
 .teaser-text p, .consulting-box .ce_text p,
 .ce_hyperlink.block, .teaser-beratung,
 .competence-block .left, .competence-block .right,
-.form-right .widget.widget-submit {
+.form-right .widget.widget-submit, .project p {
   a, .submit {
     color: white;
     background: $türkis;
@@ -55,7 +61,6 @@ ul {
     border-radius: 25px;
     text-decoration: none;
     font-size: 23px;
-    text-transform: uppercase;
     border: 3px solid $türkis;
     transition: color 250ms, background-color 250ms;
     &:hover {

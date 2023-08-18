@@ -1,31 +1,8 @@
 @import "variables";
 
-/*.header .right {
-  .mod_form {
-    position: relative;
-    cursor: pointer;
-    .search_input {
-      background: transparent;
-      border: none;
-      padding: 10px 0;
-    }
-    .search {
-      position: absolute;
-      right: 10px;
-      top: 7px;
-      width: 30px;
-    }
-  }
-}*/
+// Search mit css
 
-/*
-.right .mod_form .search:hover .search_input {
-  width: 350px;
-  background: #3b3640;
-  border-radius: 10px;
-}*/
-
-.box{
+/*.box{
   position: relative;
   cursor: pointer;
 }
@@ -51,6 +28,15 @@
   padding: 20px;
 }
 
+!*.box input {
+  width: 250px;
+  background: aliceblue;
+  border-radius: 20px;
+  height: 20px;
+  padding: 20px;
+  display: none;
+}*!
+
 .box .btn-search {
   position: absolute;
   top: 50%;
@@ -69,7 +55,9 @@
   position: relative;
   top: 3px;
   padding-right: 20px;
-}
+}*/
+
+
 
 .form-right .formbody .widget-text,
 .form-right .formbody .widget-textarea {
@@ -98,21 +86,37 @@
     top: 0;
     right: 0;
     z-index: 10;
-    .widget.widget-submit.search {
-      width: 35px;
+    min-width: 150px;
+    .formbody {
+      display: flex;
+      width: auto;
+      .widget.widget-submit.search {
+        input {
+          cursor: pointer;
+          width: 35px;
+          padding-right: 15px;
+        }
     }
-    /*.search_input {
-      display: none;
-      .input {
-        padding: 7px 4px;
-        border-radius: 37px;
-        outline: none;
-        border: none;
-        transition: .5s;
-        margin-right: 46px;
-    }*/
+      .search_input {
+        float: left;
+        input {
+          padding: 7px 4px;
+          border-radius: 37px;
+          outline: none;
+          border: none;
+          transition: width 250ms;
+          width: 0;
+          display: none;
+          &.focus {
+            width: 135px;
+          }
+        }
+      }
+    }
   }
 }
+
+
 
 @media screen and (max-width: 670px) {
   .form-right .formbody input[name="name"],

@@ -20,17 +20,22 @@ menu.addEventListener('mouseleave', function () {
 
 //SEARCH
 
-const searchBtn = document.querySelector(".search");
-const input = document.querySelector(".search_input");
-console.log(input);
-
+const searchBtn = document.querySelector(".search input");
+const input = document.querySelector(".search_input input");
+const form = document.querySelector("#form-search");
 console.log(searchBtn);
 
 searchBtn.addEventListener('mouseover', function () {
     input.style.display = "block";
+    input.classList.add("focus");
     console.log("test");
 
 });
+form.addEventListener('mouseleave', function () {
+    input.style.display = "none";
+    input.classList.remove("focus");
+});
+
 
 
 
