@@ -1,0 +1,83 @@
+@import "variables";
+
+#accordion.consulting {
+  margin-top: -12px;
+}
+
+.ce_accordionStart.accordion {
+  .toggler {
+    cursor: pointer;
+    color: black;
+    padding: 40px 70px;
+    font: normal normal normal 32px/30px Raleway;
+    position: relative;
+    background-size: auto 50px;
+    background-image: url("/files/assets/layout/Akkordeon.svg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    border-top: 1px solid gray;
+    text-transform: uppercase;
+    transition: color 250ms;
+    &.active {
+     /* background-image: url("/");*/
+      border-bottom: 0;
+    }
+     &:hover {
+       color: $türkis;
+     }
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 25px;
+      width: 30px;
+      height: 49px;
+    }
+  }
+}
+
+.accordion.ui-accordion-content{
+  .ce_text  {
+    padding-left: 70px;
+    p {
+      font: normal normal normal 24px/36px Raleway;
+      strong {
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+
+#one.ce_accordionStart.accordion .toggler {
+  border-top: 0;
+  &:before {
+    background: url("/files/assets/layout/One.svg") no-repeat 0/cover;
+  }
+}
+#two.ce_accordionStart.accordion .toggler {
+  &:before {
+    width: 35px;
+    background: url("/files/assets/layout/Two.svg") no-repeat 0/cover;
+  }
+}
+#three.ce_accordionStart.accordion .toggler {
+  &:before {
+    background: url("/files/assets/layout/Three.svg") no-repeat 0/cover;
+  }
+}
+#four.ce_accordionStart.accordion .toggler {
+  &:before {
+    width: 35px;
+    background: url("/files/assets/layout/Four.svg") no-repeat 0/cover;
+  }
+}
+#five.ce_accordionStart.accordion .toggler {
+  &:before {
+    width: 35px;
+    height: 54px;
+    background: url("/files/assets/layout/Five.svg") no-repeat 0/cover;
+  }
+}
+

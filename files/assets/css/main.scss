@@ -82,7 +82,7 @@
 }
 
 .consulting, .about-us, .reference,
-.blog, .bg-blue {
+.blog, .bg-blue, .strategy {
   height: auto;
   position: relative;
   z-index: 4;
@@ -103,6 +103,13 @@
   margin-top: -9px;
   /*background: url("/files/assets/layout/bg-white-new.svg") center top 0/cover no-repeat;*/
 }
+
+.strategy {
+  background: url("/files/assets/layout/bg_transparent.svg") center top 0/cover no-repeat;
+  margin-top: -95px;
+}
+
+
 
 .consulting-box, .consulting-text {
   margin: 100px auto ;
@@ -189,6 +196,8 @@
     }
   }
 }
+
+//blog Styling
 
 .blog-block {
   padding: 120px 0;
@@ -376,10 +385,126 @@
 
 //New Layout
 
+.project, .strategy-headline, .accordion-block {
+  margin: 100px auto;
+  padding: 50px 0;
+}
+
 .project {
+  text-align: center;
   h2 {
     font: normal normal normal 42px/56px Raleway;
+
   }
+}
+
+#advice.project, .image-text .ce_text,
+#about-us.teaser-beratung.new {
+  h2 {
+    font: normal normal 500 46px/66px Raleway;
+    position: relative;
+    padding-left: 60px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 42px;
+      height: 45px;
+      background: url("/files/assets/layout/Pfad 74.svg") no-repeat 0/cover;
+    }
+  }
+}
+
+#advice.project {
+  text-align: left;
+  h4 {
+    font: normal normal normal 36px/66px Raleway;
+    color: $blau;
+    text-transform: uppercase;
+  }
+   p {
+     font: normal normal 500 22px/66px Raleway;
+     text-align: right;
+     text-transform: uppercase;
+   }
+}
+
+.strategy-headline {
+  color: $blau;
+  h2 {
+    font: normal normal 500 42px/60px Raleway;
+  }
+  h3 {
+    font: normal normal normal 24px/60px Raleway;
+  }
+}
+
+.strategy-block {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  flex-wrap: wrap;
+  .text-left, .text-right {
+    width: 45%;
+    p {
+      font: normal normal normal 24px/36px Raleway;
+      strong {
+        text-transform: uppercase;
+        font: normal normal normal 28px/36px Raleway;
+      }
+    }
+  }
+}
+
+.teaser-beratung.new {
+  bottom: 15%;
+  left: 38vw;
+  text-align: left;
+  h2 {
+    font: normal normal 500 42px/54px Raleway;
+  }
+  p {
+    font: normal normal normal 24px/36px Raleway;
+  }
+}
+
+#consultation.project {
+  text-align: left;
+  color: $blau;
+  h2 {
+    font-weight: 500;
+  }
+
+  h3 {
+    font: normal normal normal 24px/60px Raleway;
+  }
+  p {
+    color: black;
+    font: normal normal normal 24px/36px Raleway;
+    strong {
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.image-text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .ce_text {
+    width: 55%;
+    margin-top: 10%;
+    padding-right: 30px;
+  }
+  .ce_image {
+    width: 40%;
+  }
+}
+
+#about-us.teaser-beratung.new {
+  bottom: 30%;
 }
 
 @media screen and (max-width: 670px) {

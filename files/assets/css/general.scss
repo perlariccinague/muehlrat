@@ -35,7 +35,8 @@ ul {
 .consulting-box, .blog-block, .footer,
 .consulting-text, .competence-block,
 .newslist .mod_newslist,
-.mod_newsreader, .privacy, .project {
+.mod_newsreader, .privacy, .project,
+.strategy-headline, .accordion-block {
   margin: 0 auto;
   width: 90%;
   max-width: $max-width;
@@ -57,10 +58,10 @@ ul {
   a, .submit {
     color: white;
     background: $türkis;
-    padding: 12px 25px;
+    padding: 15px 40px;
     border-radius: 25px;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 18px;
     border: 3px solid $türkis;
     transition: color 250ms, background-color 250ms;
     &:hover {
