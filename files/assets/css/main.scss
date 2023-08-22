@@ -60,7 +60,7 @@
         content: "";
         position: absolute;
         left: 10px;
-        top: -5px;
+        top: -15px;
         width: 70px;
         height: 70px;
       }
@@ -106,10 +106,13 @@
 
 .strategy {
   background: url("/files/assets/layout/bg_transparent.svg") center top 0/cover no-repeat;
-  margin-top: -95px;
+  margin-top: -100px;
 }
 
-
+#block.strategy {
+  background: url("/files/assets/layout/bg_hellblau1.svg") center top 0/cover no-repeat;
+  margin-top: -95px;
+}
 
 .consulting-box, .consulting-text {
   margin: 100px auto ;
@@ -284,26 +287,6 @@
     padding: 50px 0;
     color: white;
   }
-  .block-container {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    max-width: 1100px;
-    margin: 30px auto 115px;
-    flex-wrap: wrap;
-    .block-box {
-      width: 19%;
-      text-align: center;
-      color: white;
-      h4 {
-        font: normal normal normal 20px/26px Raleway;
-        text-transform: uppercase;
-        p {
-          font: normal normal normal 16px/22px Raleway;
-        }
-      }
-    }
-  }
 }
 
 .blog.competence {
@@ -330,7 +313,7 @@
     width: 100%;
   }
 }
-.consulting-box {
+/*.consulting-box {
   .left {
     color: $blau;
    p {
@@ -341,7 +324,7 @@
     width: 45%;
     margin-top: 40px;
   }
-}
+}*/
 
 .newslist .mod_newslist {
   margin: 80px auto;
@@ -385,7 +368,8 @@
 
 //New Layout
 
-.project, .strategy-headline, .accordion-block {
+.project, .strategy-headline, .accordion-block,
+.contact {
   margin: 100px auto;
   padding: 50px 0;
 }
@@ -449,6 +433,7 @@
     width: 45%;
     p {
       font: normal normal normal 24px/36px Raleway;
+      text-align: left;
       strong {
         text-transform: uppercase;
         font: normal normal normal 28px/36px Raleway;
@@ -469,7 +454,8 @@
   }
 }
 
-#consultation.project {
+#consultation.project, #history.project,
+#muehlrat.project{
   text-align: left;
   color: $blau;
   h2 {
@@ -507,14 +493,138 @@
   bottom: 30%;
 }
 
-@media screen and (max-width: 670px) {
+#history.project {
+  margin: 100px auto 0;
+}
+
+#block.strategy {
+  .text-left, .text-right {
+    .ce_text {
+      position: relative;
+      padding-left: 45px;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 14px;
+        width: 30px;
+        height: 35px;
+        background: url("/files/assets/layout/Icon-before-black.svg") no-repeat 0/cover;
+      }
+    }
+  }
+}
+
+.strategy-headline {
+  p {
+    text-align: right;
+    a {
+      display: inline-block;
+      border-radius: 35px;
+      padding: 8px 35px;
+      text-align: center;
+
+    }
+  }
+}
+
+#block .strategy-headline .btn p {
+  text-align: left;
+  padding-left: 45px;
+}
+
+.container-block {
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .block-box {
+    width: 30%;
+    text-align: center;
+    p {
+      font: normal normal normal 24px/36px Raleway;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .left {
+    width: 45%;
+    margin: 0 0;
+    text-align: right;
+    border-right: 3px solid $türkis;
+    padding: 0 50px 0 0;
+
+    p {
+      font: normal normal medium 24px/36px Raleway;
+    }
+  }
+  .form-right {
+    width: 45%;
+  }
+}
+
+#muehlrat.project {
+  p {
+    position: relative;
+    padding-left: 45px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 35px;
+      height: 35px;
+      background: url("/files/assets/layout/arrow-right-short(1).svg") no-repeat;
+    }
+  }
+}
+
+.address-header{
+  display: none;
+}
+
+
+@media screen and (max-width: 760px) {
 
   .teaser-text, .teaser-beratung {
-    bottom: 25%;
-    h3 {
-      .span-h2 {
-        font: normal normal normal 23px/30px Raleway;
-        font-weight: lighter;
+    bottom: 20%;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    h1 {
+      font: normal normal 500 22px/32px Raleway;
+    }
+    p {
+      font: normal normal normal 16px/24px Raleway;
+    }
+  }
+
+  .address {
+    display: none;
+  }
+
+  .address-header {
+    height: auto;
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    display: block;
+    background: url("/files/assets/layout/bg_transparent.svg") center top 0/cover no-repeat;
+    margin-top: -100px;
+    .address-mobile {
+      width: 90%;
+      margin: 65px auto;
+      max-width: 1200px;
+      padding: 30px 0 50px;
+      .ce_text {
+        text-align: center;
+        img {
+          filter: invert(1);
+        }
       }
     }
   }
@@ -522,10 +632,6 @@
   .teaser-beratung {
     left: 50%;
     bottom: -2px;
-  }
-
-  .address {
-    display: none;
   }
 
   .consulting {
@@ -542,34 +648,8 @@
     }
   }
 
- /* .about-us {
-    background: none;
-  }*/
 
-  .reference .ce_sliderStart {
-    padding: 0;
-    position: relative;
-    background: #031329;
-    margin-top: -4px;
-    .content-slider {
-      width: 70%;
-      margin: 30px auto;
-    }
-    .slider-control {
-      .slider-prev, .slider-next {
-        img {
-          width: 40px;
-          height: 40px;
-        }
-      }
-      .slider-prev {
-        left: 2%;
-      }
-      .slider-next{
-        right: 2%;
-      }
-    }
-  }
+
 
   .blog-block {
     padding: 70px 0;
@@ -610,8 +690,8 @@
    }
   }
 
-  .consulting-box .form-right {
-    width: 100%;
-    margin-top: 0;
-  }
+  /*.banner_image {
+    height: 135vh;
+  }*/
+
 }

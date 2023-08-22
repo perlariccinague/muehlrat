@@ -64,20 +64,36 @@
   margin: 20px 0;
 }
 
+.form-right .formbody input[name="vorname"],
 .form-right .formbody input[name="name"],
 .form-right .formbody textarea[name="nachricht"],
 .form-right .formbody input[name="email"],
-.form-right .formbody input[name="betreff"] {
-  background-color: #0000000D;
-  border: 0;
-  color: black;
+.form-right .formbody textarea[name="betreff"],
+.form-right .formbody textarea[name="anmerkung"]{
+  background-color: #FFF3;
+  color: #ffffffcf;
   cursor: pointer;
   width: 90%;
-  padding: 10px 26px;
+  padding: 10px 20px;
   outline: none;
-  border-radius: 25px;
-  font: normal normal 500 16px/30px Raleway;
+  border-radius: 10px;
+  font: normal normal 500 22px/30px Raleway;
   transition: background-color 250ms;
+  border: 1px solid white;
+}
+
+.form-right .formbody {
+  .widget.widget-text.form-left,
+  .widget.widget-text.right {
+    float: left;
+    width: 44%;
+  }
+  .widget.widget-text.form-left {
+    margin-right: 3%;
+  }
+  .widget.widget-text.right {
+    margin-left: 3%;
+  }
 }
 
 .right {
@@ -86,7 +102,7 @@
     top: 0;
     right: 0;
     z-index: 10;
-    min-width: 150px;
+    /*min-width: 150px;*/
     .formbody {
       display: flex;
       width: auto;
@@ -100,15 +116,18 @@
       .search_input {
         float: left;
         input {
-          padding: 7px 4px;
+          padding: 12px 4px;
           border-radius: 37px;
           outline: none;
           border: none;
-          transition: width 250ms;
+          transition: width 250ms, opacity 250ms, padding 250ms;
           width: 0;
-          display: none;
+          display: block;
+          opacity: 0;
           &.focus {
-            width: 135px;
+            width: 140px;
+            padding: 6px 4px;
+            opacity: 1;
           }
         }
       }

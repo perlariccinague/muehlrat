@@ -36,7 +36,8 @@ ul {
 .consulting-text, .competence-block,
 .newslist .mod_newslist,
 .mod_newsreader, .privacy, .project,
-.strategy-headline, .accordion-block {
+.strategy-headline, .accordion-block,
+.container-block, .contact {
   margin: 0 auto;
   width: 90%;
   max-width: $max-width;
@@ -54,7 +55,7 @@ ul {
 .teaser-text p, .consulting-box .ce_text p,
 .ce_hyperlink.block, .teaser-beratung,
 .competence-block .left, .competence-block .right,
-.form-right .widget.widget-submit, .project p {
+.form-right .widget.widget-submit, .project p, .strategy-headline {
   a, .submit {
     color: white;
     background: $türkis;
@@ -74,9 +75,9 @@ ul {
 
 .form-right .widget.widget-submit {
   text-align: right;
- /*.submit {
-   font: normal normal 500 18px/26px Raleway;
- }*/
+  .submit {
+    text-transform: uppercase;
+  }
 }
 
 .bg {
@@ -93,6 +94,10 @@ ul {
 
 .mod_newsreader {
   margin: 50px auto;
+}
+
+#container ::placeholder {
+  opacity: 1;
 }
 
 @media screen and (max-width: 670px){

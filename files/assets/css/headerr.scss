@@ -3,12 +3,11 @@
 #header {
   position: absolute;
   width: 100%;
-  z-index: 10;
+  z-index: 200;
   .inside {
 
   }
 }
-
 
 .header {
   display: flex;
@@ -24,15 +23,41 @@
   }
   .right {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     width: 28%;
     position: relative;
+    left: 0;
+    transition: left 500ms;
     .mobile_menu_trigger {
       cursor: pointer;
       img {
         width: 120px;
       }
     }
+  }
+}
+
+.mod_mobile_menu.mobile {
+  display: none;
+}
+
+
+@media screen and (max-width: 760px) {
+  .mod_mobile_menu.mobile {
+    display: block;
+    margin-right: 0;
+  }
+  .mod_mobile_menu.desktop,
+  .right .mod_form {
+    display: none;
+  }
+  .header .logo-header {
+    img {
+      width: 220px;
+    }
+  }
+  .header .right .mobile_menu_trigger img {
+    width: 60px;
   }
 }
