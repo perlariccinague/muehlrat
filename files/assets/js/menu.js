@@ -35,18 +35,26 @@ form.addEventListener('mouseleave', function () {
     modMenu.style.marginRight ="50px"
 });
 
+// Mobile Menu Effect
+
 const mobileMenu = document.querySelector("#mobile-menu-14");
-console.log(mobileMenu);
 const bannerImage = document.querySelector(".banner_image")
 const teaser = document.querySelector(".teaser-text")
 const MobileTrigger = document.querySelector("#mobile-menu-14-trigger")
-console.log(teaser);
+const teaserNew = document.querySelector(".teaser-beratung.new");
+console.log(teaserNew);
 
 MobileTrigger.addEventListener('click' , () => {
     if(mobileMenu.classList.contains('active')) {
-        console.log("test");
-        teaser.style.fontSize = "14px"
         bannerImage.classList.add("menu-active");
+        teaser.classList.add("mobile");
+        MobileTrigger.style.opacity = "0"
+        teaserNew.setAttribute("id", "test")
+    }
+    else {
+        bannerImage.classList.remove("menu-active");
+        teaser.classList.remove("mobile");
+        MobileTrigger.style.opacity = "1"
     }
 })
 

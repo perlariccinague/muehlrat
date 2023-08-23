@@ -70,6 +70,8 @@
 
 @media screen and (max-width: 760px)  {
   #mobile-menu-14 {
+    /*opacity: 1;
+    transition: opacity 700ms;*/
     .inner {
       background-image: linear-gradient(to bottom, #041C3A, transparent);
       .header.mobile {
@@ -83,14 +85,15 @@
             }
           }
           .menu-close {
-            font-size: 50px;
+            font-size: 55px;
             color: white;
-            position: relative;
-            top: -9px;
+            position: absolute;
+            top: 20px;
+            right: 5vw;
           }
         }
         .header-middle {
-          margin: 40px auto;
+          margin: 80px auto 20px;
           text-align: center;
           .mod_form {
             .widget.widget-submit.search {
@@ -107,9 +110,15 @@
             ul {
               display: block;
               text-align: center;
+              max-width: 185px;
+              margin: 0 auto;
               li {
                 height: 0;
+                padding: 4px 0;
                 transition: height 700ms;
+                &:not(:last-child) {
+                  border-bottom: 1px solid #fff;
+                }
               }
             }
           }
@@ -123,13 +132,12 @@
   height: 30px;
 }
 
-.menu-active {
-  height: 135vh;
+#mobile-menu-14-trigger {
+  opacity: 1;
+  transition: opacity 700ms;
 }
 
-.banner_image.menu-active .header-image img {
-  height: 135vh;
-}
+
 
 /*.banner_image {
   height: 135vh;

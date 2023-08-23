@@ -81,3 +81,37 @@
   }
 }
 
+@media screen and (max-width: 760px) {
+  #accordion.consulting {
+    margin-top: -55px;
+  }
+  .ce_accordionStart.accordion .toggler {
+    padding: 30px 40px;
+    font: normal normal normal 19px/26px Raleway;
+    word-break: break-word;
+    background-size: auto 35px;
+    &:before {
+      width: 20px;
+      height: 35px;
+    }
+  }
+  #two.ce_accordionStart.accordion .toggler::before {
+    width: 26px;
+  }
+  #three.ce_accordionStart.accordion .toggler::before {
+    width: 24px;
+    height: 39px;
+    top: 34px;
+  }
+  #four.ce_accordionStart.accordion .toggler::before {
+    width: 28px;
+  }
+  #five.ce_accordionStart.accordion .toggler::before {
+    width: 26px;
+    height: 40px;
+    top: 37px;
+  }
+}
+
+
+
