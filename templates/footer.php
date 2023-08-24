@@ -1,4 +1,7 @@
-<div class="footer"
+<div class="footer">
+    <div class="footer-top">
+        {{insert_content::211}}
+    </div>
     <div class="footer-middle">
         <div class="footer-middle-left">
             {{insert_content::39}}

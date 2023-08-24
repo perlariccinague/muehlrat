@@ -70,8 +70,6 @@
 
 @media screen and (max-width: 760px)  {
   #mobile-menu-14 {
-    /*opacity: 1;
-    transition: opacity 700ms;*/
     .inner {
       background-image: linear-gradient(to bottom, #041C3A, transparent);
       .header.mobile {
@@ -85,11 +83,11 @@
             }
           }
           .menu-close {
-            font-size: 55px;
+            font-size: 60px;
             color: white;
             position: absolute;
-            top: 20px;
-            right: 5vw;
+            top: 22px;
+            right: 10vw;
           }
         }
         .header-middle {
@@ -99,6 +97,7 @@
             .widget.widget-submit.search {
               input {
                 width: 40px;
+                display: none;
               }
             }
           }

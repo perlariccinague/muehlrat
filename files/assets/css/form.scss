@@ -1,64 +1,5 @@
 @import "variables";
 
-// Search mit css
-
-/*.box{
-  position: relative;
-  cursor: pointer;
-}
-
-.input {
-  padding: 10px;
-  width: 80px;
-  height: 80px;
-  background: none;
-  border-radius: 50px;
-  box-sizing: border-box;
-  font-size: 20px;
-  outline: none;
-  border: none;
-  transition: .5s;
-}
-
-.box:hover .input, .box:focus .input {
-  width: 250px;
-  background: aliceblue;
-  border-radius: 20px;
-  height: 20px;
-  padding: 20px;
-}
-
-!*.box input {
-  width: 250px;
-  background: aliceblue;
-  border-radius: 20px;
-  height: 20px;
-  padding: 20px;
-  display: none;
-}*!
-
-.box .btn-search {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(-50%,-50%);
-  transition: .2s;
-  cursor: pointer;
-  img {
-    width: 30px;
-  }
-}
-
-.box:hover .btn-search, .box:focus .btn-search{
-  z-index: 1;
-  right: -12px;
-  position: relative;
-  top: 3px;
-  padding-right: 20px;
-}*/
-
-
-
 .form-right .formbody .widget-text,
 .form-right .formbody .widget-textarea {
   margin: 20px 0;
@@ -96,55 +37,85 @@
   }
 }
 
-.right {
-  .mod_form {
-    position: relative;
-    top: 0;
-    right: 0;
-    z-index: 10;
-    /*min-width: 150px;*/
-    .formbody {
-      display: flex;
-      width: auto;
-      .widget.widget-submit.search {
-        input {
-          cursor: pointer;
-          width: 35px;
-          padding-right: 15px;
-        }
+
+
+.right .mod_form, .header.mobile .header-middle {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  .formbody {
+    display: flex;
+    width: auto;
+    .widget.widget-submit.search {
+      input {
+        cursor: pointer;
+        width: 35px;
+        padding-right: 15px;
+      }
     }
-      .search_input {
-        float: left;
-        input {
-          padding: 12px 4px;
-          border-radius: 37px;
-          outline: none;
-          border: none;
-          transition: width 250ms, opacity 250ms, padding 250ms;
-          width: 0;
-          display: block;
-          opacity: 0;
-          &.focus {
-            width: 140px;
-            padding: 6px 4px;
-            opacity: 1;
-          }
+    .search_input {
+      float: left;
+      input {
+        padding: 12px 4px;
+        border-radius: 37px;
+        outline: none;
+        border: none;
+        transition: width 250ms, opacity 250ms, padding 250ms;
+        width: 0;
+        display: block;
+        opacity: 0;
+        &.focus {
+          width: 140px;
+          padding: 6px 4px;
+          opacity: 1;
         }
       }
     }
   }
 }
 
+.header.mobile .header-middle {
+  .formbody {
+    justify-content: center;
+  }
+}
+
+.btn-submit {
+  display: none;
+}
 
 
-@media screen and (max-width: 670px) {
+
+@media screen and (max-width: 760px) {
+  .form-right .formbody input[name="vorname"],
   .form-right .formbody input[name="name"],
   .form-right .formbody textarea[name="nachricht"],
   .form-right .formbody input[name="email"],
-  .form-right .formbody input[name="betreff"] {
-    padding: 10px 12px;
+  .form-right .formbody textarea[name="betreff"],
+  .form-right .formbody textarea[name="anmerkung"] {
+    padding: 10px 10px;
+    font: normal normal 500 19px/30px Raleway;
   }
   .form-right .widget.widget-submit {
     text-align: center;
+  }
+  .form-right .formbody {
+    .widget.widget-text.form-left,
+    .widget.widget-text.right {
+      float: none;
+      width: 100%;
+    }
+    .widget.widget-text.form-left {
+      margin-right: 0;
+    }
+    .widget.widget-text.right {
+      margin-left: 0;
+    }
+  }
+
+  .btn-submit {
+    display: block;
+    width: 40px;
   }
 }
