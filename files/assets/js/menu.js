@@ -1,6 +1,5 @@
 const menu = document.querySelector('.mobile_menu');
 const menuButton = document.querySelector('.mobile_menu_trigger');
-console.log(menuButton.getEv)
 const bg = document.querySelector('.bg');
 let blocked = false;
 let justHovered = false;
@@ -13,7 +12,7 @@ menuButton.addEventListener('mouseover', function () {
         console.log("mouseover");
         menuButton.click();
         blocked = true;
-        bg.style.height = "400px"
+        bg.style.height = "400px";
         setTimeout(function(){
             blocked = false;
         },500);
@@ -30,35 +29,50 @@ menu.addEventListener('mouseleave', function () {
         menuIsShown = false;
     }
 });
-
 //SEARCH
 
 const searchBtn = document.querySelector(".search input");
 const input = document.querySelector(".search_input input");
 const form = document.querySelector("#form-search");
 const modMenu = document.querySelector(".mod_mobile_menu");
-
 searchBtn.addEventListener('mouseover', function () {
     input.classList.add("focus");
-    modMenu.style.marginRight ="20px"
+    modMenu.style.marginRight ="20px";
 
 });
 form.addEventListener('mouseleave', function () {
     input.classList.remove("focus");
-    modMenu.style.marginRight ="50px"
+    modMenu.style.marginRight ="50px";
 });
-
 // SEARCH MOBILE
 const submitBtn = document.querySelector(" .mod_form.mobile .search input");
-const searchBtnMobile = document.querySelector(".mod_form.mobile .btn-submit img");
+const searchBtnMobile = document.querySelector(".mod_form.mobile .btn-submit ");
 const inputMobile = document.querySelector(".mod_form.mobile .search_input input");
+let searchBarOpen = false;
+searchBtnMobile.addEventListener('click', function (e) {
 
-searchBtnMobile.addEventListener('click', function () {
-    submitBtn.style.display ="block";
-    inputMobile.classList.add("focus");
-    searchBtnMobile.style.display = "none"
+    if(!searchBarOpen) {
+        console.log("test");
+        submitBtn.style.display ="block";
+        inputMobile.classList.add("focus");
+        searchBarOpen = true;
+        /*setTimeout(function(){
+            buttonClicked = false;
+            console.log(buttonClicked);
+        },1000);*/
+    } else {
+        console.log("else" );
+        submitBtn.style.display ="none";
+        inputMobile.classList.remove("focus");
+        searchBarOpen = false;
+    }
 });
 
+
+searchBtnMobile.addEventListener('click', function () {
+    submitBtn.style.display ="none";
+    inputMobile.classList.remove("focus");
+});
 
 // Mobile Menu Effect
 const mobileMenu = document.querySelector("#mobile-menu-14");
@@ -96,8 +110,3 @@ MobileTrigger.addEventListener('click' , () => {
         }
     }
 })
-
-
-
-
-

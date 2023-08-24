@@ -8,10 +8,11 @@
     position: relative;
     .mod_navigation {
       position: relative;
-      top: 95px;
+      top: 60px;
       width: 90%;
       max-width: $max-width;
       margin: 80px auto;
+      z-index: 40;
       ul {
         padding: 0;
         display: flex;
@@ -86,7 +87,7 @@
             font-size: 60px;
             color: white;
             position: absolute;
-            top: 22px;
+            top: 10px;
             right: 10vw;
           }
         }
@@ -96,7 +97,7 @@
           .mod_form {
             .widget.widget-submit.search {
               input {
-                width: 40px;
+               /* width: 40px;*/
                 display: none;
               }
             }
@@ -134,15 +135,7 @@
 #mobile-menu-14-trigger {
   opacity: 1;
   transition: opacity 700ms;
+  cursor: pointer;
 }
 
 
-
-/*.banner_image {
-  height: 135vh;
-}*/
-
-/*.banner_image .header-image img {
-  height: 135vh;
-  object-position: center;
-}*/

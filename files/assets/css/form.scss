@@ -78,13 +78,22 @@
 .header.mobile .header-middle {
   .formbody {
     justify-content: center;
+    .widget.widget-submit.search  {
+      input {
+        position: absolute;
+        right: 60px;
+        top: 2px;
+        width: 30px;
+      }
+    }
   }
 }
 
 .btn-submit {
+  width: 40px;
+  cursor: pointer;
   display: none;
 }
-
 
 
 @media screen and (max-width: 760px) {
@@ -116,6 +125,5 @@
 
   .btn-submit {
     display: block;
-    width: 40px;
   }
 }

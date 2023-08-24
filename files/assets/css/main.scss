@@ -396,15 +396,17 @@
 }
 
 .teaser-beratung.new {
-  max-width: 500px;
+  max-width: 1200px;
   bottom: 20%;
-  left: 38vw;
+  left: 50%;
   text-align: left;
+  width: 90%;
   h2 {
     font: normal normal 500 42px/54px Raleway;
   }
   p {
     font: normal normal normal 24px/36px Raleway;
+    max-width: 600px;
   }
 }
 
