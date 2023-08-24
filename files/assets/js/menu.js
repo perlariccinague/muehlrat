@@ -60,7 +60,8 @@ searchBtnMobile.addEventListener('click', function (e) {
             buttonClicked = false;
             console.log(buttonClicked);
         },1000);*/
-    } else {
+    }
+    else {
         console.log("else" );
         submitBtn.style.display ="none";
         inputMobile.classList.remove("focus");
