@@ -29,6 +29,7 @@ menu.addEventListener('mouseleave', function () {
         menuIsShown = false;
     }
 });
+
 //SEARCH
 
 const searchBtn = document.querySelector(".search input");
@@ -44,13 +45,15 @@ form.addEventListener('mouseleave', function () {
     input.classList.remove("focus");
     modMenu.style.marginRight ="50px";
 });
+
 // SEARCH MOBILE
 const submitBtn = document.querySelector(" .mod_form.mobile .search input");
 const searchBtnMobile = document.querySelector(".mod_form.mobile .btn-submit ");
 const inputMobile = document.querySelector(".mod_form.mobile .search_input input");
 let searchBarOpen = false;
-searchBtnMobile.addEventListener('click', function (e) {
 
+
+searchBtnMobile.addEventListener('click', function (e) {
     if(!searchBarOpen) {
         console.log("test");
         submitBtn.style.display ="block";
@@ -67,6 +70,34 @@ searchBtnMobile.addEventListener('click', function (e) {
         searchBarOpen = false;
     }
 });
+
+function RemoveClick () {
+    searchBtnMobile.removeEventListener('click', function () {
+        buttonClicked = false;
+        if(buttonClicked) {
+            console.log("hello");
+            searchBtnMobile.addEventListener('click', function (){
+                submitBtn.style.display ="none";
+                inputMobile.classList.remove("focus");
+            });
+        }
+    });
+}
+
+searchBtnMobile.removeEventListener('click', function () {
+    buttonClicked = false;
+    console.log("hello")
+    if(buttonClicked) {
+        searchBtnMobile.addEventListener('click', function (){
+            submitBtn.style.display ="none";
+            inputMobile.classList.remove("focus");
+        });
+
+    }
+});
+
+
+
 
 
 searchBtnMobile.addEventListener('click', function () {
@@ -110,3 +141,8 @@ MobileTrigger.addEventListener('click' , () => {
         }
     }
 })
+
+
+
+
+
