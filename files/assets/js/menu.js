@@ -67,6 +67,7 @@ searchBtnMobile.addEventListener('click', function () {
 });
 
 
+
 // Mobile Menu Effect
 const mobileMenu = document.querySelector("#mobile-menu-14");
 const bannerImage = document.querySelector(".banner_image")
