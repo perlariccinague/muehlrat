@@ -517,6 +517,13 @@
 
     p {
       font: normal normal 500 24px/36px Raleway;
+      a {
+        color: $blau;
+        transition: color 250ms;
+        &:hover {
+        color: $türkis;
+      }
+      }
     }
   }
   .form-right {
@@ -549,7 +556,7 @@
 }
 
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 835px) {
 //New Layout
   .teaser-text, .teaser-beratung {
     bottom: 20%;
@@ -816,51 +823,4 @@
   .banner_image .header-image.desktop {
     display: none;
   }
-
-
-  /*.consulting {
-    margin-top: -108px;
-  }
-
-  .consulting-box {
-    margin: 30px auto;
-    .ce_text, .ce_image {
-      width: 100%;
-    }
-    .ce_text {
-      margin-top: 15px;
-    }
-  }
-
-  .blog-block {
-    padding: 70px 0;
-    .mod_newslist .layout_short {
-      width: 100%;
-    }
-  }
-  
-  .consulting-text {
-    margin: 30px auto;
-    .left, .right {
-      width: 100%;
-    }
-  }
-
-  .competence-block {
-    padding: 50px 0;
-    margin: 50px auto;
-    flex-wrap: wrap;
-    .left {
-      border: none;
-      padding-right: 0;
-      text-align: center;
-    }
-    .left, .right {
-      width: 100%;
-    }
-  .right {
-    margin-top: 15px;
-    text-align: center;
-   }
-  }*/
 }

@@ -69,7 +69,13 @@
   }
 }
 
-@media screen and (max-width: 760px)  {
+@media screen and (max-width: 1050px) {
+  .mobile_menu .inner .mod_navigation {
+    top: 35px;
+  }
+}
+
+@media screen and (max-width: 835px)  {
   #mobile-menu-14 {
     .inner {
       background-image: linear-gradient(to bottom, #041C3A, transparent);

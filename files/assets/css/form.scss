@@ -37,8 +37,6 @@
   }
 }
 
-
-
 .right .mod_form, .header.mobile .header-middle {
   position: relative;
   top: 0;
@@ -90,13 +88,13 @@
 }
 
 .btn-submit {
-  width: 40px;
-  cursor: pointer;
   display: none;
+  cursor: pointer;
 }
 
 
-@media screen and (max-width: 760px) {
+
+@media screen and (max-width: 835px) {
   .form-right .formbody input[name="vorname"],
   .form-right .formbody input[name="name"],
   .form-right .formbody textarea[name="nachricht"],
@@ -125,5 +123,11 @@
 
   .btn-submit {
     display: block;
+    width: 40px;
   }
 }
+
+
+
+
+
