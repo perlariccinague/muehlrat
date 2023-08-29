@@ -112,7 +112,7 @@
 
 .strategy, #privacy {
   background: url("/files/assets/layout/bg_transparent.svg") center top 0/cover no-repeat;
-  margin-top: -100px;
+  margin-top: -120px;
 }
 
 #block {
@@ -309,6 +309,7 @@
     color: $blau;
   }
   p {
+    font: normal normal normal 24px/36px Raleway;
     a {
       color: $blau;
       transition: color 250ms;
@@ -822,5 +823,9 @@
   }
   .banner_image .header-image.desktop {
     display: none;
+  }
+
+  #privacy {
+    background: none;
   }
 }

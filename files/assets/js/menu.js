@@ -1,6 +1,5 @@
 const menu = document.querySelector('.mobile_menu');
 const menuButton = document.querySelector('.mobile_menu_trigger');
-console.log(menuButton.getEv)
 const bg = document.querySelector('.bg');
 let blocked = false;
 let justHovered = false;
@@ -10,7 +9,6 @@ menuButton.addEventListener('mouseover', function () {
     if(!justHovered && !menuIsShown) {
         menuIsShown = true;
         justHovered = true;
-        console.log("mouseover");
         menuButton.click();
         blocked = true;
         bg.style.height = "400px"
@@ -40,12 +38,26 @@ const modMenu = document.querySelector(".mod_mobile_menu");
 
 searchBtn.addEventListener('mouseover', function () {
     input.classList.add("focus");
-    modMenu.style.marginRight ="20px"
-
+    modMenu.style.marginRight ="20px";
 });
+
+input.addEventListener("keyup", function (){
+     if(input.value !== "") {
+         input.focus();
+   } else {
+         input.blur();
+         /*modMenu.style.marginRight ="50px";*/
+   }
+})
+
 form.addEventListener('mouseleave', function () {
-    input.classList.remove("focus");
-    modMenu.style.marginRight ="50px"
+   /* input.classList.remove("focus");
+    modMenu.style.marginRight ="50px";*/
+    if(input.hasFocus()) {
+        console.log("test");
+        input.classList.remove("focus");
+          modMenu.style.marginRight ="50px";
+    }
 });
 
 // SEARCH MOBILE

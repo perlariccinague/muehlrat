@@ -63,11 +63,16 @@
         width: 0;
         display: block;
         opacity: 0;
-        &.focus {
+        &.focus, &:focus  {
           width: 140px;
           padding: 6px 4px;
           opacity: 1;
         }
+      /* &:focus {
+         width: 120px;
+         padding: 6px 4px;
+         opacity: 1;
+       }*/
       }
     }
   }
@@ -124,6 +129,16 @@
   .btn-submit {
     display: block;
     width: 40px;
+  }
+
+  .header.mobile .header-middle .formbody .widget.widget-submit.search input {
+    right: 32vw;
+  }
+}
+
+@media screen and (max-width: 670px)  {
+  .header.mobile .header-middle .formbody .widget.widget-submit.search input {
+    right: 18vw;
   }
 }
 
