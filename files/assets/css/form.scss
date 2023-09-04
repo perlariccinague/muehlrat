@@ -50,6 +50,7 @@
         cursor: pointer;
         width: 35px;
         padding-right: 15px;
+        margin-top: 4px;
       }
     }
     .search_input {
@@ -63,9 +64,10 @@
         width: 0;
         display: block;
         opacity: 0;
+        font: normal normal 500 20px/24px Raleway;
         &.focus, &:focus  {
-          width: 140px;
-          padding: 6px 4px;
+          width: 170px;
+          padding: 6px 12px;
           opacity: 1;
         }
       /* &:focus {

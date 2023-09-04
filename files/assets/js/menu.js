@@ -35,6 +35,7 @@ const searchBtn = document.querySelector(".search input");
 const input = document.querySelector(".search_input input");
 const form = document.querySelector("#form-search");
 const modMenu = document.querySelector(".mod_mobile_menu");
+const  hasFocus = document.hasFocus;
 
 searchBtn.addEventListener('mouseover', function () {
     input.classList.add("focus");
@@ -42,21 +43,20 @@ searchBtn.addEventListener('mouseover', function () {
 });
 
 input.addEventListener("keyup", function (){
-     if(input.value !== "") {
+     if(input.value !== "" ) {
          input.focus();
    } else {
          input.blur();
-         /*modMenu.style.marginRight ="50px";*/
    }
 })
 
 form.addEventListener('mouseleave', function () {
-   /* input.classList.remove("focus");
-    modMenu.style.marginRight ="50px";*/
-    if(input.hasFocus()) {
+    input.classList.remove("focus");
+    /*modMenu.style.marginRight ="50px";*/
+    if(document.hasFocus) {
         console.log("test");
-        input.classList.remove("focus");
-          modMenu.style.marginRight ="50px";
+        /*input.classList.remove("focus");
+        modMenu.style.marginRight ="50px";*/
     }
 });
 

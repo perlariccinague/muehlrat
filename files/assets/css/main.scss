@@ -36,6 +36,7 @@
 }
 
 .teaser-text {
+  max-width: 1000px;
   p {
     font: normal normal normal 26px/36px Raleway;
   }
@@ -556,6 +557,21 @@
   font: normal normal 500 14px/16px Raleway;
 }
 
+
+@media screen and (max-height: 835px) {
+  .banner_image {
+    height: 100vh;
+  }
+  h1 {
+    font: normal normal 500 38px/40px Raleway;
+  }
+  .consulting {
+    margin-top: -125px;
+  }
+  .address {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 835px) {
 //New Layout

@@ -69,6 +69,13 @@
   }
 }
 
+@media screen and (max-height: 835px) {
+  .mobile_menu .inner .mod_navigation {
+    top: 25px;
+    margin: 60px auto;
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .mobile_menu .inner .mod_navigation {
     top: 35px;
