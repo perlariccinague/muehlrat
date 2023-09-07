@@ -112,6 +112,36 @@ ul {
   margin: 10px auto 50px;
 }
 
+.error-banner_image {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  .error-image {
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+#error.teaser-text {
+  bottom: 35%;
+  img {
+    width: 500px;
+  }
+  p {
+    text-transform: uppercase;
+  }
+}
+
+.mobile_menu_trigger {
+  display: block;
+}
+
+
+
 @media screen and (max-width: 835px){
   h2 {
     font: normal normal 500 30px/35px Raleway;
