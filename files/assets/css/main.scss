@@ -90,7 +90,7 @@
 }
 
 .consulting, .about-us, .reference,
-.blog, .bg-blue, .strategy, #privacy {
+.blog, .bg-blue, .strategy, .privacy-new {
   height: auto;
   position: relative;
   z-index: 4;
@@ -111,7 +111,7 @@
   margin-top: -9px;
 }
 
-.strategy, #privacy {
+.strategy, .privacy-new {
   background: url("/files/assets/layout/bg_transparent.svg") center top 0/cover no-repeat;
   margin-top: -120px;
 }
@@ -825,7 +825,7 @@
     bottom: 15%;
   }
 
-  #home, .strategy, #block.strategy, #privacy {
+  #home, .strategy, #block.strategy, .privacy-new {
     background: url("/files/assets/layout/bg_white_mobile.svg") center top 0/cover no-repeat;
     margin-top: -50px;
   }
@@ -841,7 +841,7 @@
     display: none;
   }
 
-  #privacy {
+  .privacy-new {
     background: none;
   }
 }
