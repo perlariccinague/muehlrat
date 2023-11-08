@@ -30,6 +30,7 @@
     left: 0;
     transition: left 500ms;
     .mobile_menu_trigger {
+      cursor: pointer;
       img {
         width: 120px;
       }

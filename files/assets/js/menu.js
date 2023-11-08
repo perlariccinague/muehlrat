@@ -5,7 +5,17 @@ let blocked = false;
 let justHovered = false;
 let menuIsShown = false;
 
-menuButton.addEventListener('mouseover', function () {
+menuButton.addEventListener('click', function() {
+    if(!menuIsShown) {
+        bg.style.height = "550px";
+        menuIsShown = true;
+    } else {
+        bg.style.height = "230px";
+        menuIsShown = false;
+    }
+})
+
+/* menuButton.addEventListener('mouseover', function () {
     if(!justHovered && !menuIsShown) {
         menuIsShown = true;
         justHovered = true;
@@ -27,7 +37,9 @@ menu.addEventListener('mouseleave', function () {
         bg.style.height = "230px";
         menuIsShown = false;
     }
-});
+}); */
+
+
 
 //SEARCH
 

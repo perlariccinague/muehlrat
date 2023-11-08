@@ -8,7 +8,7 @@
     position: relative;
     .mod_navigation {
       position: relative;
-      top: 60px;
+      top: 90px;
       width: 90%;
       max-width: $max-width;
       margin: 80px auto;
@@ -27,6 +27,7 @@
            top: 0;
            transition: top 250ms;
            font: normal normal 500 20px/30px Raleway;
+           text-shadow: 0 0 10px black;
            &:after {
              position: absolute;
              bottom: -4px;
@@ -71,14 +72,14 @@
 
 @media screen and (max-height: 835px) {
   .mobile_menu .inner .mod_navigation {
-    top: 25px;
+    top: 80px;
     margin: 60px auto;
   }
 }
 
 @media screen and (max-width: 1050px) {
   .mobile_menu .inner .mod_navigation {
-    top: 35px;
+    top: 100px;
   }
 }
 
